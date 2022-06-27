@@ -1,0 +1,70 @@
+.contenedorfoot{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "foot foot foot foot";
+    .foot{
+    grid-area: foot;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 0;
+    border: 1px solid burlywood;
+    }
+    .txtred{
+        font-size: 15px;
+        color: white;
+        text-align: center;
+       
+    }
+            
+    .pago{
+        display: flex;
+        align-items: center;
+        width: 90%;
+        
+    }     
+    
+    
+
+    }
+//MIXINS FOOTER
+@mixin ic{
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 10px;
+    &:hover{
+        opacity: 60%;
+    }
+    
+     
+ }
+
+ .bi-instagram {
+    @include ic;
+    color: black;
+}
+.bi-facebook{
+    @include ic;
+    color: #3b5998;
+}
+.bi-person-lines-fill{
+    @include ic;
+    color: green;
+}
+ 
+// BOTON WS
+.botoW{
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    opacity: 80%;
+    .bi-whatsapp{
+        box-shadow: 1px 1px 1px 1px black
+    
+    }
+}

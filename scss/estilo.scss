@@ -1,0 +1,21 @@
+@import "header";
+@import "main";
+@import "footer";
+body{
+    background-color: rgb(245, 238, 229);
+ }
+ $background-color-f: rgb(201, 160, 160);
+
+ $font-family-c: 'Fredoka One', cursive;
+
+h4{
+    font-family: $font-family-c;
+}
+
+.bg-nav, .btn-color, .foot{
+    background-color:$background-color-f
+}
+
+
+
+ 
